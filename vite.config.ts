@@ -4,10 +4,12 @@ import vue from "@vitejs/plugin-vue";
 
 import { crx } from "@crxjs/vite-plugin";
 
-// resolve json module
 import manifest from "./manifest.json";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), crx({ manifest })],
+  build: {
+    sourcemap: true,
+  },
 });
