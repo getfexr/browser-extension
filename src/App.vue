@@ -1,10 +1,17 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+import NavbarComponent from "./components/NavbarComponent.vue";
 </script>
 
 <template>
-  <router-view />
+  <div id="root">
+    <NavbarComponent />
+    <router-view />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#root {
+  width: 350px;
+  height: 300px;
+}
+</style>
