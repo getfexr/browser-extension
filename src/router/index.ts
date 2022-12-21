@@ -16,6 +16,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "Contacts",
     component: () => import("../views/contacts.vue"),
   },
+  {
+    path: "/connect",
+    name: "Connect",
+    component: () => import("../views/connectToSky.vue"),
+  },
 ];
 
 const router = createRouter({
